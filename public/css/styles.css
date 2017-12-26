@@ -1,0 +1,115 @@
+
+.container {
+	margin: 100px auto 0 auto;
+    width: 130px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 4px;
+	height: 45px;
+}
+
+.container a {
+	font-size: 35px;
+    text-decoration: none;
+    color: #000;
+	line-height: 45px;
+}
+
+html {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: rgb(35, 35, 35);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.error {
+	color: red;
+}
+
+header {
+	background-color: #dedddd;
+	display: flex;
+	justify-content: space-between;
+}
+
+img.logo {
+	height: 40px;
+}
+
+header .links {
+	display: flex;
+}
+
+header .links a {
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+	text-transform: none;
+	text-decoration: none;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+header .links a:hover {
+	background-color: #bfbdbd;
+}
+
+header .links a:visited {
+	color: rgb(35, 35, 35);
+	background-color: #bfbdbd;
+}
+
+header .selected {
+	border-bottom: 3px solid #ffb100;
+	background-color: #bfbdbd;
+}
+
+.callback {
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+table.accounts {
+	border-collapse: collapse;
+	margin: 10px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.accounts th {
+	color: #eee;
+	background-color: #3cf962;
+}
+
+.accounts td, th {
+	border: 1px solid #dedddd;
+	padding: 5px;
+}
+
+.accounts tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.loader {
+	background-color: rgba(0, 0, 0, 0.46);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.loader img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.hidden {
+	display: none;
+}

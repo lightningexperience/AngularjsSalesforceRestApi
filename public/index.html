@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="sfexpress">
+	<head>
+		<title>Salesforce</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header ng-controller="HeaderController">
+			<div class="links">
+				<img class="logo" src="/img/logo.png">
+				<a ng-if="auth.isAuthorized" ng-class="getClass('/accounts')"
+					href="#/accounts">Accounts</a>
+				<a ng-if="auth.isAuthorized" ng-class="getClass('/sobjects')"
+					href="#/sobjects">Available objects</a>
+			</div>
+			<div class="links">
+				<a ng-hide="auth.isAuthorized" href="#/login">Login</a>
+				<a ng-show="auth.isAuthorized" ng-click="logout()" href="">Logout</a>
+			</div>
+		</header>
+		<div loading-spinner></div>
+		<div ng-view></div>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-route.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.7.1/angular-local-storage.js"></script>-->
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+		<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/directives.js"></script>
+	</body>
+</html>

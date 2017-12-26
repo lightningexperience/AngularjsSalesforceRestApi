@@ -1,0 +1,18 @@
+<div>
+	<table class="accounts">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>AccountNumber</th>
+				<th>Owner</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="acc in accounts">
+				<td ng-bind="acc.Name"></td>
+				<td ng-bind="acc.AccountNumber"></td>
+				<td ng-bind="acc.Owner.Name"></td>
+			</tr>
+		</tbody>
+	</table
+</div>

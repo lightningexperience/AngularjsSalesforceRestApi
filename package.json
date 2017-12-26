@@ -1,0 +1,27 @@
+{
+  "name": "sfexpress",
+  "version": "1.0.0",
+  "description": "Integration of salesforce rest api and Angularjs",
+  "main": "server.js",
+  "author": "Kasyan E.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bower": "^1.7.7",
+    "express": "^4.16.2",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.8",
+    "karma-junit-reporter": "^0.4.1",
+    "protractor": "^4.0.9",
+    "salesforce-oauth2": "^0.1.8"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js"
+  }
+}
