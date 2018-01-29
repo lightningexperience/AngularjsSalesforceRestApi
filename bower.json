@@ -11,7 +11,7 @@
     "salesforce",
     "rest"
   ],
-  "homepage": "https://sfexpress.herokuapp.com/#login",
+  "homepage": "https://rest-angular.herokuapp.com/#login",
   "ignore": [
     "**/.*",
     "node_modules",
